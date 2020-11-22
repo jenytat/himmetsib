@@ -1,0 +1,218 @@
+body
+    font-family: sans-serif
+.intec-template-title
+    display: block
+    margin-top: 11px
+    margin-bottom: 30px
+.intec-content
+    max-width: 1384px
+    min-width: 320px
+    margin: 0 auto
+    clear: both
+    overflow: hidden
+.intec-content .intec-content-wrapper
+    display: block
+    margin-left: 20px
+    margin-right: 20px
+h1.intec-header
+    margin: 0
+    font-size: 30px
+    line-height: 37px
+    color: #2D2D2D
+.intec-template-page
+    display: block
+    margin-bottom: 50px
+.intec-content.intec-content-visible
+    overflow: visible
+.calculator__form-item
+    margin-bottom: 30px
+.calculator__form-item_header
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 21px
+.calculator__form-item_header-left
+    display: inline-block
+    & select
+        width: 100%
+        min-width: 347px
+        height: 50px
+        box-sizing: border-box
+        background: #FFFFFF
+        border: 1px solid #373F89
+        outline: none
+        padding: 3px 15px
+        font-size: 14px
+        line-height: 17px
+        color: #9A9A9A
+.calculator__form-item_header-right
+    & a
+        font-size: 16px
+        line-height: 20px
+        color: #373F89
+        position: relative
+        display: block
+        &:hover
+            text-decoration: none
+        &::before
+            position: absolute
+            content: ''
+            width: 12px
+            height: 12px
+            background: url(../images/icon/delete.svg) no-repeat
+            background-size: contain
+            display: block
+            left: -23px
+            top: 50%
+            margin-top: -6px
+.calculator__form-item_fields
+    width: 100%
+    box-sizing: border-box
+    padding: 34px
+    background: #D8DBF1
+    display: flex
+    align-items: center
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        display: block
+        background: #D8DBF1
+        width: 15px
+        height: 15px
+        transform: rotate(45deg)
+        left: 17px
+        top: -8px
+.calculator__form-item_field
+    margin-right: 70px
+    margin-bottom: 17px
+    &:last-child
+        margin-right: 0
+    & label
+        display: flex
+        flex-direction: column
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
+        color: #2D2D2D
+    & select
+        display: block
+        height: 40px
+        text-align: right
+        padding: 2px 15px
+        width: 100%
+        min-width: 229px
+        margin-top: 10px
+        outline: none
+        font-size: 14px
+        line-height: 17px
+        color: #2D2D2D
+        font-weight: bold
+        background: #FFFFFF
+        border: 1px solid #EEEEEE
+    & input[type="input"]
+        margin-top: 10px
+        box-sizing: border-box
+        background: #FFFFFF
+        border: 1px solid #EEEEEE
+        display: block
+        height: 40px
+        text-align: left
+        font-size: 14px
+        line-height: 17px
+        color: #2D2D2D
+        font-weight: bold
+        outline: none
+        padding: 2px 15px
+        width: 160px
+        &::placeholder
+            font-size: 14px
+            line-height: 17px
+            color: #2D2D2D
+.calculator__form-item_summary
+    width: 100%
+    text-align: right
+    font-size: 21px
+    line-height: 26px
+    color: #2D2D2D
+    & span
+        font-size: 0.7em
+.calculator__form-controls
+    text-align: right
+.intec-button.intec-button-cl-common
+    width: 236px
+    height: 50px
+    background: #E7E8EF
+    border: none
+    font-size: 14px
+    line-height: 17px
+    color: #373F89
+    cursor: pointer
+    transition: all .4s ease-in-out
+    outline: none
+    &:hover
+        background: #EEEEEE
+    & img
+        margin-right: 15px
+.calculator__form-info
+    text-align: right
+    font-size: 24px
+    line-height: 29px
+    color: #2D2D2D
+    & p
+        margin: 0
+    & span
+        font-weight: bold
+.calculator__form-info-total-price 
+    margin: 30px 0 14px 0
+.calculator-btn
+    width: 248px
+    height: 48px
+    border: 1px solid #373F89
+    box-sizing: border-box
+    display: flex
+    align-items: center
+    justify-content: center
+    text-decoration: none
+    transition: all .4s ease-in-out
+    &:hover
+        box-shadow: 0 0 10px 0 rgba(#373F89, .8)
+    & img
+        margin-right: 9px
+@media(max-width: 1300px)
+    .calculator__form-item_field
+        margin-right: 15px
+@media(max-width: 991px)
+    .calculator__form-item_fields
+        flex-wrap: wrap
+    .calculator__form-item_field select
+        min-width: 160px
+@media(max-width: 768px)
+    h1.intec-header
+        font-size: 24px
+        line-height: 29px
+    .calculator__form-item_header
+        flex-direction: column
+    .calculator__form-item_header-left
+        width: 100%
+    .calculator__form-item_header-left select
+        min-width: 100%
+        margin-bottom: 12px
+    .calculator__form-item_fields
+        flex-direction: column
+        padding: 20px
+    .calculator__form-item_fields::before
+        display: none
+    .calculator__form-item_field
+        margin-right: 0
+        width: 100%
+    .calculator__form-item_field select
+        min-width: 100%
+    .calculator__form-item_field input[type="input"]
+        width: 100%
+    .calculator__form-item_summary, .calculator__form-controls, .calculator__form-info
+        text-align: center
+    .calculator__form-info
+        font-size: 22px
+        line-height: 27px

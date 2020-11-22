@@ -1,0 +1,49 @@
+.intec-template-title
+    .intec-content
+        .intec-content-wrapper
+            h1.intec-header Металлокалькулятор
+.intec-template-page
+    .intec-template-page
+        .intec-content.intec-content-visible
+            .intec-content-wrapper
+                .calculator__form
+                    .calculator__form-items
+                        .calculator__form-item
+                            .calculator__form-item_header
+                                .calculator__form-item_header-left
+                                    select
+                                        option(value="") Выберите номенклатуру
+                                .calculator__form-item_header-right
+                                    a(href="#") Удалить позицию
+                            .calculator__form-item_fields
+                                .calculator__form-item_field
+                                    label Профилеразмер
+                                        select
+                                            option(value="6") 6
+                                .calculator__form-item_field
+                                    label Штук
+                                        input(type="input", placeholder="385")
+                                .calculator__form-item_field
+                                    label Длина (м)
+                                        input(type="input", placeholder="2307.69")
+                                .calculator__form-item_field
+                                    label Масса (кг)
+                                        input(type="input", placeholder="600")
+                                .calculator__form-item_summary 30 030 
+                                    span руб.
+                    .calculator__form-controls
+                        button.intec-button.intec-button-lg.intec-button-cl-common 
+                            img(src="./images/icon/pluse.svg", alt="pluse")
+                            span Добавить позицию
+                    .calculator__form-info
+                        .calculator__form-info-total-price 
+                            p Итоговая стоимость: 
+                            span 30 030 руб.
+                        .calculator__form-info-total-mass
+                            p Суммарная масса: 
+                            span 0.6 т
+a(href="#").calculator-btn 
+    img(src="./images/icon/calculator.svg", alt="calculator")
+    span Металлокалькулятор
+                            
+                                
